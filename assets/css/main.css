@@ -4,6 +4,7 @@
   --transparent-color: #0f748f66;
   --p-color: #777;
   --section-padding: 100px;
+  --main-border-color: #a2a2a2;
 }
 
 /* End Variables */
@@ -131,7 +132,7 @@ header .container::after {
   content: "";
   position: absolute;
   width: calc(100% - 30px);
-  background: #a2a2a2;
+  background: var(--main-border-color);
   height: 1px;
   bottom: 0;
   left: 15px;
@@ -211,7 +212,7 @@ header .container nav .form {
   position: relative;
   width: 40px;
   height: 30px;
-  border-left: 1px solid #a2a2a2;
+  border-left: 1px solid var(--main-border-color);
   margin-left: 30px;
 }
 
@@ -276,6 +277,7 @@ header .container nav .form i {
   font-weight: normal;
   line-height: 1.3;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .landing .text .content p {
@@ -306,16 +308,16 @@ header .container nav .form i {
 
 .landing .bullets {
   position: absolute;
-  bottom: 30px;
+  bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
 
 .landing .bullets li {
-  width: 10px;
-  height: 10px;
-  border: 1px solid white;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--main-border-color);
   margin-left: 5px;
   border-radius: 50%;
 }
