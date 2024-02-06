@@ -193,16 +193,25 @@ header .container nav ul li a {
   transition: .3s;
 }
 
+header .container nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 0;
+}
+
 header .container nav ul li a:hover {
   color: var(--main-color);
-  border-bottom: 1px solid var(--main-color);
 }
 
 header .container nav .form {
   position: relative;
   width: 40px;
   height: 30px;
-  border-left: 1px solid white;
+  border-left: 1px solid #a2a2a2;
   margin-left: 30px;
 }
 
