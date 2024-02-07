@@ -577,7 +577,7 @@ header .container nav .form i {
 }
 
 .video .text p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 14px;
 }
 
@@ -606,17 +606,10 @@ header .container nav .form i {
   max-width: 100%;
 }
 
-@media (max-width:767px) {
+@media (max-width:450px) {
   .about img {
     bottom: -60px;
     margin-top: -60px;
-  }
-}
-
-@media (max-width:992px) {
-  .about img {
-    bottom: -110px;
-    margin-top: -110px;
   }
 }
 
