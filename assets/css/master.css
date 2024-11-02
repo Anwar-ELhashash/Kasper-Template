@@ -363,6 +363,12 @@ header .container nav .form i:hover {
   row-gap: 50px;
 }
 
+@media (max-width:767px) {
+  .services .container .content {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+
 .services .container .content .col .card {
   display: flex;
 }
@@ -460,7 +466,7 @@ header .container nav .form i:hover {
 
 .design .text ul li {
   padding: 15px 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .design .text ul li::before {
@@ -490,11 +496,12 @@ header .container nav .form i:hover {
 .portfolio ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-bottom: 30px;
 }
 
 .portfolio ul li {
-  margin-right: 5px;
   padding: 5px;
   text-transform: uppercase;
   border-radius: 4px;
@@ -728,6 +735,13 @@ header .container nav .form i:hover {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 100px;
+}
+
+@media (max-width:767px) {
+  .skills .container {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 50px;
+  }
 }
 
 .skills .container .col {
@@ -988,10 +1002,11 @@ header .container nav .form i:hover {
 
 .pricing .plans .plan button {
   margin-top: 25px;
-  border-color: var(--main-color);
   padding: 10px 20px;
-  background-color: white;
   font-size: 18px;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 6px;
 }
 
 .pricing .plans .plan button:hover {
@@ -1013,10 +1028,15 @@ header .container nav .form i:hover {
 
 .pricing .contact a {
   padding: 10px 30px;
-  background-color: var(--main-color);
+  background-color: #f1f1f1;
   color: white;
   font-size: 18px;
   font-weight: bold;
+  border-radius: 6px;
+}
+
+.pricing .contact a:hover {
+  background-color: var(--main-color);
 }
 
 /* end pricing section */
