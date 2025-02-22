@@ -16,51 +16,42 @@
   padding: 0;
   margin: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Open Sans", sans-serif;
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-
 /* small screens */
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
-
 /* medium screens */
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
-
 /* large screens */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
-
 /* end global rules */
 /* start components  */
 .main-heading {
@@ -166,7 +157,7 @@ header .container nav ul {
     display: none;
   }
 
-  header .container nav .icon:hover .toggle-menu+ul {
+  header .container nav .icon:hover .toggle-menu + ul {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -209,7 +200,6 @@ header .container nav li a:hover {
 header .container nav li a:hover::after {
   display: block;
 }
-
 
 header .container nav .form {
   width: 40px;
@@ -363,7 +353,7 @@ header .container nav .form i:hover {
   row-gap: 50px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .services .container .content {
     grid-template-columns: minmax(200px, 1fr);
   }
@@ -382,7 +372,7 @@ header .container nav .form i:hover {
   margin-right: 50px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .services .container .content .col .card {
     flex-direction: column;
     text-align: center;
@@ -442,7 +432,7 @@ header .container nav .form i:hover {
   text-align: center;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .design .image {
     display: none;
   }
@@ -587,7 +577,6 @@ header .container nav .form i:hover {
 
 /* start video section */
 .video {
-
   position: relative;
 }
 
@@ -611,7 +600,7 @@ header .container nav .form i:hover {
   font-weight: normal;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .video .text {
     background-color: transparent;
   }
@@ -651,12 +640,11 @@ header .container nav .form i:hover {
   margin-top: -120px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .about .container img {
     top: 70px;
     margin-top: -70px;
   }
-
 }
 
 /* end about section */
@@ -682,19 +670,19 @@ header .container nav .form i:hover {
   padding: 50px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .statics .container .box {
     flex-basis: 100%;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .statics .container .box {
     flex-basis: 50%;
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .statics .container .box {
     flex-basis: 25%;
   }
@@ -730,14 +718,13 @@ header .container nav .form i:hover {
   padding-bottom: var(--section-padding);
 }
 
-
 .skills .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 100px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .skills .container {
     grid-template-columns: minmax(200px, 1fr);
     gap: 50px;
@@ -756,7 +743,7 @@ header .container nav .form i:hover {
   text-transform: uppercase;
 }
 
-.skills .container .col .heading+p {
+.skills .container .col .heading + p {
   color: var(--p-color);
   margin: 0 auto 100px;
   line-height: 2;
@@ -770,14 +757,13 @@ header .container nav .form i:hover {
   margin-bottom: 50px;
 }
 
-
 .skills .container .testimonial .box img {
   height: 100px;
   border-radius: 50%;
   margin-right: 50px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .skills .container .testimonial .box {
     flex-direction: column;
     text-align: center;
@@ -804,7 +790,7 @@ header .container nav .form i:hover {
   color: var(--p-color);
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .skills .container .testimonial .box .text span {
     text-align: center;
   }
@@ -831,7 +817,6 @@ header .container nav .form i:hover {
   border-color: var(--main-color);
   background-color: var(--main-color);
 }
-
 
 .skills .container .skill .bar {
   margin-bottom: 25px;
@@ -865,7 +850,6 @@ header .container nav .form i:hover {
   color: white;
   border-radius: 4px;
   padding: 5px 10px;
-
 }
 
 .skills .container .skill .bar div span::after {
@@ -923,21 +907,21 @@ header .container nav .form i:hover {
   padding: 20px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .pricing .plans .plan {
     flex-basis: 100%;
     margin-bottom: 50px;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .pricing .plans .plan {
     flex-basis: 50%;
     margin-bottom: 50px;
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .pricing .plans .plan {
     flex-basis: 25%;
   }
@@ -1153,7 +1137,7 @@ header .container nav .form i:hover {
 }
 
 .contact-us .content form input[type="text"],
-.contact-us .content form input[type="eamil"],
+.contact-us .content form input[type="email"],
 .contact-us .content form textarea {
   display: block;
   width: 100%;
@@ -1166,6 +1150,7 @@ header .container nav .form i:hover {
 
 .contact-us .content form textarea {
   height: 200px;
+  resize: vertical;
 }
 
 .contact-us .content form input[type="submit"] {
@@ -1180,8 +1165,11 @@ header .container nav .form i:hover {
   font-size: 14px;
   width: fit-content;
   cursor: pointer;
+  transition: 0.3s;
 }
-
+.contact-us .content form input[type="submit"]:hover {
+  transform: translateY(-3px);
+}
 .contact-us .content .info {
   flex-basis: 20%;
 }
